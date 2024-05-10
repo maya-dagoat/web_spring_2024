@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maya | Choose Your Own Adventure Game</title>
+</head>
+<body>
+    <script>
+        function playGame() {
+        var enterLife = confirm("You have the option to become a wolf, do you choose to become one?");
+        alert(enterLife);
+        if (enterLife == true) {
+            //if we enter the life
+            alert("Now that you have become a wolf, you see three houses that you may blow down.");
+
+            var houseChoice = prompt("House 1 is made of straw. House 2 is made of sticks. House 3 is made of bricks. Do you want to blow down house 1, 2, or 3?");
+            if (houseChoice == 1) {
+                alert("you passs congrats buddy i havent worked out what to type yet");
+            } else if (houseChoice == 2) {
+                alert("Blah blah blahhhhhhhh house didnt work.");
+            } else if (houseChoice == 3) {
+                alert("The porrige was so hot your mouth filled with blisters. THey suddenly pop and fill your mouth with pus. You drown. Game over.");
+                var housechoice = prompt("please choose what house to blow down next. blah blah blah.");
+                if (housechoice == 1) {
+                    alert("you loose boo hoo.game over.");
+                } else if (housechoice == 2) {
+                    alert("congrats this is the right house the sticks house yay the pigs are sad now");
+
+                    var houseCHOICE = prompt("You wanna blow odwn one more house yayy lets do that omg. choose 1 2 or 3");
+                    if(houseCHOICE == 1) {
+                        alert("game over");
+                    } else if (houseCHOICE == 2) {
+                        alert("Game over");
+                    } else {
+                        alert("you failed to blow it down im so sorry");
+                        alert("game over buddy, you lived a long life");
+                        alert("the end")
+                    }
+                } else {
+                    alert("wrong choice you cant blow down bricks so lose. game over.");
+                }
+            } else {
+                alert("Please try again.");
+            }
+        }
+        else {
+            //we do not become a wolf
+            alert("Wow you really don't want to have some fun do you? Game over buddy. You're done.");
+        }
+
+        var planAgain = confirm("Do you want to play again?");
+        if (playAgain == true) {
+            playGame();
+        } else {
+            alert("Thank you for playing! Goodbye!");
+        }
+        }
+        playGame();
+    </script>
+</body>
+</html>

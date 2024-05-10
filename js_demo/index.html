@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type ="text/Javascript" src="js/script.js"></script>
+</head>
+<body>
+    <div>
+        <h1>Today, we will learn about Javascript!</h1>
+        <p><a href="http://www.google.com" target="_blank"
+        onclick="alert('Warning! You\'re leaving my website.')">Search Google</a></p>
+
+        <h2>How do we do math with JS?</h2>
+        <p>What is 5+6?</p>
+        <button onclock="document.getElementById('add').innerHTML = 5+6">Click here to find the answer!</button>
+        <p id="add"></p>
+
+        <h2>How do we ask questions with external JS?</h2>
+        <button onclick="askQuestion()">Click here for your question!</button>
+        <p id="question"></p>
+
+        <h2>How can I make an image appear with a button click?</h2>
+        <button onclick="showImage()">Click here for a surprise!</button>
+        <img id="surprise" src="" width="700px;">
+    </div>
+
+    <script>
+        //The code below will make a popup window.
+        //NOTE: Make sure to turn the alert back on before submitting
+        //alert('Hello world!\n Welcome to my site!')
+    </script>
+</body>
+</html>
